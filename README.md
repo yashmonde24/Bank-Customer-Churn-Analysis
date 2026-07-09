@@ -28,14 +28,22 @@ This project looks at why bank customers leave the bank. We use data to find pat
 4. Found key reasons why customers leave
 
 ---
-
 ## Key Findings
-- Older customers are more likely to leave
-- Customers from Germany leave more than other countries
-- Customers with 3 or 4 bank products almost always leave
-- Inactive customers are more likely to leave
-- Female customers leave more than male customers
-- Credit score does not have much impact on churn
+- Overall churn rate: 20.4%
+- Churn rate spikes sharply for customers with 3+ products — 82.7% (n=266) 
+  and 100% (n=60) churn, vs 7.6-27.7% for customers with 1-2 products (n=9,674).
+  Note: this relationship is non-linear, so it does not show up as a strong
+  correlation in the heatmap (NumOfProducts-Exited correlation ≈ 0.0) — 
+  segment-level analysis was needed to catch it.
+- Germany-based customers churn at 32.4%, roughly double France and Spain (~16%)
+- Inactive members churn at 26.9% vs 14.3% for active members
+- Female customers churn at 25.1% vs 16.5% for male customers
+- Churn peaks in the 51-60 age group at 56%, consistent with Age showing the
+  strongest linear correlation with churn among numeric features (0.3)
+- Credit score showed no meaningful correlation with churn (≈ 0.0)
+
+**Priority retention segments:** customers with 3+ products, inactive members, 
+and Germany-based customers show the highest churn risk.
 
 ---
 
