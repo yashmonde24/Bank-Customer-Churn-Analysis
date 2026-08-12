@@ -62,3 +62,6 @@ findings to check where a simple correlation was misleading
   relationship is non-linear - and why segment-level analysis matters
 - The importance of checking sample size before trusting a segment-level
   finding, especially for small groups
+
+  Insights Preview :
+  - Visualization : https://github.com/yashmonde24/Bank-Customer-Churn-Analysis/tree/main/outputs/OUTCOMES
